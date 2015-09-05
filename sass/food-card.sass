@@ -34,11 +34,12 @@ $min-height: 400px
 
   .left-column, .right-column
     position: relative
-    min-height: $min-height
     max-height: $min-height
 
   .right-column
     padding-right: 1em
+    overflow: auto
+    padding-left: 1em
 
   .left-column
     background: #f1f1f1
@@ -53,7 +54,6 @@ $min-height: 400px
     text-shadow: 3px 4px 5px rgba(0,0,0,0.5)
     color: white
     position: absolute
-    padding-bottom: 1em
     margin: 0 auto
     background: rgba(0,0,0,0.5)
     z-index: 100
@@ -89,7 +89,10 @@ $min-height: 400px
     text-align: right
 
   .u-max-full-height
-    height: 400px
+    max-height: 400px
+    vertical-align: bottom
+    height:auto
+    width:auto
 
   .comments-box
     *
