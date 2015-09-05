@@ -39,7 +39,10 @@ $min-height: 400px
   .right-column
     padding-right: 1em
     overflow: auto
-    padding-left: 1em
+
+  @media screen and (max-width: 550px)
+    .right-column 
+      padding-left: 1em
 
   .left-column
     background: #f1f1f1
