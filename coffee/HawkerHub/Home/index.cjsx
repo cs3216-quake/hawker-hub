@@ -46,9 +46,9 @@ module.exports = React.createClass
   render: ->
     buttonShown =
       if !@state.addItemShown
-        <LabeledButton label="Add Item" icon="add" onClick={@showAddItem} />
+        <LabeledButton style={{'float':'right'}} label="Add Item" icon="add" onClick={@showAddItem} />
       else
-        <LabeledButton label="Close" icon="close" onClick={@hideAddItem} />
+        <LabeledButton style={{'float':'right'}} label="Close" icon="close" onClick={@hideAddItem} />
     <div className="container">
       {
         if (@state.hasLoggedIn && !@state.singleView)

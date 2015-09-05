@@ -10,4 +10,4 @@ module.exports = React.createClass
         </div>
         <div className="eight columns button-text">{@props.label}</div>
       </div>
-    <UI.FlatButton onClick={@props.onClick} children={child} />
+    <UI.FlatButton style={@props.style} onClick={@props.onClick} children={child} />
